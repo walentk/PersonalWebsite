@@ -12,3 +12,8 @@ blogdown::serve_site()
 
 rstudioapi::navigateToFile("content/authors/admin/_index.md")
 
+git init
+git remote add origin https://github.com/walentk/PersonalWebsite.git
+git add .
+git commit -m "Initial commit of my Blogdown site"
+git push -u origin main
