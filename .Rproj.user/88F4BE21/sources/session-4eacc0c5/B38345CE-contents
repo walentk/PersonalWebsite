@@ -1,0 +1,17 @@
+install.packages("blogdown") # install the blogdown package
+library(blogdown) # load blogdown
+setwd('/Users/walentk/Documents/WWW-Resume_page/')
+new_site(theme = "wowchemy/starter-academic") # create your website!
+file.edit("gitignore")
+blogdown::check_site()
+
+install.packages("rstudioapi")
+library(rstudioapi) # to easily navigate to files
+rstudioapi::navigateToFile("config.yaml")
+
+
+git remote add origin https://github.com/walentk/PersonalWebsite.git
+
+git push -u origin main
+
+2QzBZuFwbXSS2hi
